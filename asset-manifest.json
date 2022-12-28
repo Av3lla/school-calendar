@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/school-calendar/static/css/main.08878318.css",
+    "main.js": "/school-calendar/static/js/main.21186c16.js",
+    "index.html": "/school-calendar/index.html",
+    "main.08878318.css.map": "/school-calendar/static/css/main.08878318.css.map",
+    "main.21186c16.js.map": "/school-calendar/static/js/main.21186c16.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08878318.css",
+    "static/js/main.21186c16.js"
+  ]
+}
