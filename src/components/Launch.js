@@ -72,10 +72,18 @@ function Launch(props) {
   }, [schoolInfo, isSchoolInfoReady, schoolName])
 
   useEffect(() => {
+    let result;
     if (launchInfo !== '') {
-      let result = launchInfo.mealServiceDietInfo[1].row[0];
-      console.log(result.DDISH_NM);
-      setLaunchMenu(result.DDISH_NM);
+      try {
+        result = launchInfo.mealServiceDietInfo[1].row[0].DDISH_NM;
+      } catch (error) {
+          console.log(error);
+          if (error.name === 'TypeError') {
+            result = "오늘은 급식이 없는 것 같습니다.  :<";
+          }
+      }
+      console.log(result);
+      setLaunchMenu(result);
     }
   }, [launchInfo])
 
