@@ -6,7 +6,7 @@ import TimeTable from './TimeTable.js';
 function App() {
   const [page, setPage] = useState('launch');
   const [school, setSchool] = useState('');
-  const [date, setDate] = useState(new Date().toLocaleDateString('ko').replace(/. /g, '-').slice(0, 10));
+  const [date, setDate] = useState(new Date().toISOString().replace(/. /g, '-').slice(0, 10));
   const [schoolInfo, setSchoolInfo] = useState('');
   const [isSchoolInfoReady, setIsSchoolInfoReady] = useState(false);
   const [schoolName, setSchoolName] = useState('');

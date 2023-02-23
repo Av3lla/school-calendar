@@ -102,6 +102,7 @@ function TimeTable(props) {
 
   useEffect(() => {
     if (timeTableInfo !== '') {
+      console.log(timeTableInfo);
       let result = timeTableInfo.hisTimetable[1].row;
       let timeTableArray = [];
       for (let i = 0; i < result.length; i++) {
